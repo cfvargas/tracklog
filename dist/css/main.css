@@ -61,6 +61,7 @@ section hr {
 }
 .menu__item:hover a {
   color: #fff;
+  text-decoration: underline;
 }
 .menu__item:hover img {
   animation-name: saltar;

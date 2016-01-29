@@ -1,0 +1,20 @@
+{
+  "name": "tracklog",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-jade": "~1.1.0",
+    "gulp-stylus": "~2.3.0",
+    "gulp-plumber": "~1.0.1",
+    "nib": "~1.1.0",
+    "gulp-imagemin": "~2.4.0",
+    "imagemin-pngquant": "~4.2.0"
+  }
+}

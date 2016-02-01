@@ -6,8 +6,39 @@ head
     link(rel="stylesheet", href="css/formulario.css")
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css')
 body
+    nav.menu
+        header
+            img(src="./img/logo.png", alt="tracklog")
+            div.icon-menu
+                span.close-left
+                span.close-right
+        div.menu__item
+            a(href="#")
+                img(src="./img/choferes.png", alt="")
+                p Relación de choferes
+        div.menu__item
+            a(href="#")
+                img(src="./img/unidades.png", alt="")
+                p Relación de unidades
+        div.menu__item
+            a(href="#")
+                img(src="./img/rutas.png", alt="")
+                p Creación de rutas
+        div.menu__item
+            a(href="#")
+                img(src="./img/viajes.png", alt="")
+                p Programación de viajes
+        div.menu__item
+            a(href="#")
+                img(src="./img/salir.png", alt="")
+                p Salir
+
     header
         img(src="./img/logo.png", alt="tracklog")
+        div.icon-menu
+            span.icon-top
+            span.icon-middle
+            span.icon-bottom
     section.content__form
         h1 Relación de choferes
         hr

@@ -11,6 +11,9 @@ body
 header
     width 100%
     text-align center
+    display flex
+    justify-content space-around
+    align-items center
     img
         margin-top 2em
         max-width 200px
@@ -18,7 +21,7 @@ header
 .content__form
     width 100%
     max-width 1024px
-    margin auto
+    margin 4em auto
     h1
         color #808080
         font-weight 100
@@ -89,6 +92,81 @@ form
 .pestana-active
     display flex
 
+
+.menu
+    background: linear-gradient(to bottom, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 10%,  rgba(88,78,81,1) 100%);
+    position absolute
+    top -100vh
+    left 0
+    z-index 100
+    width 100%
+    height 100vh
+    margin auto
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+    transition all .5s
+    &__item
+        width 33.3%
+        margin-top 4em
+        a
+            text-align center
+            text-decoration none
+            color #808080
+            display flex
+            flex-direction column
+            justify-content flex-end
+            align-items center
+            img
+                max-width 100%
+                margin auto
+            
+            p
+                margin-top .5em
+                font-size 24px
+                font-weight 100
+        
+        &:hover
+            a
+                color #fff
+                text-decoration underline
+            img
+                animation-name saltar
+                animation-duration .5s
+                animation-fill-mode backwards
+                animation-iteration-count infinite
+                
+
+.icon-menu
+    width 16px
+    height 8px
+    cursor pointer
+    span
+        width 20px
+        height 2px
+        display block
+        background-color #fff
+        margin-top 3px
+    .close-left
+        transform rotateZ(45deg)
+    .close-right
+        transform rotateZ(-45deg)
+        margin-top -2px
+        
+
+.menu-show
+    top 0
+
+@keyframes saltar
+    0%{
+        transform scale(1.1)
+    }
+    50%{
+        transform scale(.9)
+    }
+    100%{
+        transform scale(1)
+    }
 
     
 @keyframes cargar

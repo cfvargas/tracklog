@@ -1,0 +1,100 @@
+*
+    padding 0
+    margin 0
+body
+    background: linear-gradient(to bottom, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 10%,  rgba(88,78,81,1) 100%);
+    width 100%
+    height 100vh
+    box-sizing border-box
+    font-family roboto
+
+header
+    width 100%
+    text-align center
+    img
+        margin-top 2em
+        max-width 200px
+
+.content__form
+    width 100%
+    max-width 1024px
+    margin auto
+    h1
+        color #808080
+        font-weight 100
+    hr
+        width 100%
+        height 2px
+        background #808080
+        border none
+        box-shadow 0px 0 #808080 inset
+        
+
+.subnav
+    width 100%
+    background-color rgba(0,0,0,.2)
+    color #fff
+    ul
+        display flex
+        li
+            list-style none
+            line-height 3
+            padding 0 1em
+            cursor pointer
+form
+    width 100%
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+.input__grup
+    display flex
+    flex-direction column
+    width 40%
+    margin-top 1.2em
+    
+    input
+        background-color transparent
+        line-height 2
+        padding .2em .5em
+        outline none
+        box-shadow 0px 2px 0 #808080
+        border none
+        margin-bottom .5em
+        color #fff
+        &:focus
+            animation-name cargar
+            animation-duration .3s
+            animation-fill-mode forwards
+
+
+    label
+        color #808080
+        text-transform uppercase
+        
+.btn
+    line-height 2.5
+    width 100px
+    display block
+    margin-left auto
+    border none
+    border-radius 3px
+    background-color #00adef
+    color #fff
+    cursor pointer
+
+
+.pestana
+    display none
+
+.pestana-active
+    display flex
+
+
+    
+@keyframes cargar
+    0%{
+        box-shadow 0 0 0 #00adef 
+    }
+    100%{
+        box-shadow 0 2px 0 #00adef 
+    }

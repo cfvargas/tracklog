@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Formulario
+    link(rel="stylesheet", href="css/formulario.css")
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css')
+body
+    header
+        img(src="./img/logo.png", alt="tracklog")
+    section.content__form
+        h1 Relación de choferes
+        hr
+        nav.subnav
+            ul
+                li(data-link=0).link Datos Personales
+                li(data-link=1).link Documentos
+        form(action="" data-pestana=0).pestana
+            div.input__grup
+                input(type="text")
+                label DNI
+            div.input__grup
+                input(type="text")
+                label Fecha de Ingreso            
+            div.input__grup
+                input(type="text")
+                label Fecha de Ingreso            
+            div.input__grup
+                input(type="text")
+                label Fecha de Ingreso
+            div.input__grup
+                button.btn Guardar 
+        //-------------------------------------------------
+        form(action="" data-pestana=1).pestana.pestana-active
+            div.input__grup
+                input(type="text")
+                label DNI2
+            div.input__grup
+                input(type="text")
+                label Fecha de Ingreso2
+            div.input__grup
+                input(type="text")
+                label Fecha de Ingreso2
+            div.input__grup
+                input(type="text")
+                label Fecha de Ingreso2
+            div.input__grup
+                button.btn Guardar 
+    script(src="./js/main.js")

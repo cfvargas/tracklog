@@ -49,6 +49,7 @@ header img {
   line-height: 3;
   padding: 0 1em;
   cursor: pointer;
+  font-weight: 200;
 }
 form {
   width: 100%;
@@ -165,6 +166,9 @@ form {
 }
 .menu-show {
   top: 0;
+}
+.link-active {
+  border-bottom: 2px solid #00adef;
 }
 @-moz-keyframes saltar {
   0% {

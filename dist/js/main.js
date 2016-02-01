@@ -2,9 +2,13 @@
 function showPestaña() {
     var data = this.getAttribute('data-link');
     var pestana = document.getElementsByClassName('pestana');
+    for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove('link-active');
+    };
     for (var i = 0; i < pestana.length; i++) {
         pestana[i].classList.remove('pestana-active');
     };
+    this.classList.add('link-active');
     pestana[data].classList.toggle('pestana-active');
 }
 
@@ -20,6 +24,7 @@ function showMenu() {
 var links = document.getElementsByClassName('link');
 for (var i = 0 ; i < links.length ; i++) {
     links[i].addEventListener('click', showPestaña);
+
 };
 
 

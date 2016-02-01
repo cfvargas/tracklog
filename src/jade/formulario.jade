@@ -44,9 +44,9 @@ body
         hr
         nav.subnav
             ul
-                li(data-link=0).link Datos Personales
+                li(data-link=0).link.link-active Datos Personales
                 li(data-link=1).link Documentos
-        form(action="" data-pestana=0).pestana
+        form(action="" data-pestana=0).pestana.pestana-active
             div.input__grup
                 input(type="text")
                 label DNI
@@ -62,7 +62,7 @@ body
             div.input__grup
                 button.btn Guardar 
         //-------------------------------------------------
-        form(action="" data-pestana=1).pestana.pestana-active
+        form(action="" data-pestana=1).pestana
             div.input__grup
                 input(type="text")
                 label DNI2

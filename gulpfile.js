@@ -39,7 +39,7 @@ gulp.task('imgmin', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./src/jade/**/**/*.jade', ['build:jade']);
-    gulp.watch('./src/stylus/*.styl', ['build:stylus']);
+    gulp.watch(['./src/stylus/*.styl', './src/stylus/includes/*.styl'], ['build:stylus']);
 });
 
 
